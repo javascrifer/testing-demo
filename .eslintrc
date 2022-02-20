@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "plugin:@shopify/typescript",
+    "plugin:@shopify/react",
+    "plugin:@shopify/prettier"
+  ],
+  "rules": {
+    "@shopify/jsx-no-hardcoded-content": 0,
+    "prettier/prettier": ["error", {"singleQuote": true}]
+  }
+}
