@@ -1,14 +1,27 @@
 import React, { FC, DetailedHTMLProps, ButtonHTMLAttributes } from 'react';
 
-type ButtonProps = DetailedHTMLProps<
+import { TestId } from '../../types';
+
+type HTMLButtonProps = DetailedHTMLProps<
   ButtonHTMLAttributes<HTMLButtonElement>,
   HTMLButtonElement
 >;
 
-export const Button: FC<ButtonProps> = ({ children, type, ...buttonProps }) => {
+export interface ButtonProps extends HTMLButtonProps {
+  testId?: TestId;
+}
+
+export const Button: FC<ButtonProps> = ({
+  children,
+  testId,
+  type,
+  ...buttonProps
+}) => {
   return (
-    <button type={type ?? 'button'} {...buttonProps}>
+    <button data-testid={testId} type={type ?? 'button'} {...buttonProps}>
       {children}
     </button>
   );
 };
+
+Button.defaultProps = { testId: TestId.Button };

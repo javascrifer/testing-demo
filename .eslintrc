@@ -10,5 +10,11 @@
     "no-process-env": 0,
     "react/button-has-type": 0,
     "prettier/prettier": ["error", {"singleQuote": true}]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+      "extends": ["plugin:testing-library/react"]
+    }
+  ]
 }
