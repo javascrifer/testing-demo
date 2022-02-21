@@ -1,9 +1,11 @@
 import React from 'react';
 
-// import styles from './App.module.css';
+import { useLocalization } from './hooks';
+import { Button } from './components';
 
 function App() {
-  return <main className="App">Hello</main>;
+  const { t } = useLocalization();
+  return <Button>{t('landing-page.cta')}</Button>;
 }
 
 export default App;
