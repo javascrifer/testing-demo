@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 
-import { useAnalytics, useLocalization } from './hooks';
-import { Button, SubscriptionForm } from './components';
+import { useAnalytics, useLocalization, useSubscriptionService } from './hooks';
+import { SubscriptionForm } from './components';
 
 function App() {
   const { t } = useLocalization();
+  const { createSubscription } = useSubscriptionService();
   const { report } = useAnalytics();
   const [latestSubscriber, setLatestSubscriber] = useState<string>('');
 
   const handleSubscriptionFormSubmit = async (email: string) => {
-    // eslint-disable-next-line no-warning-comments
-    // TODO: Handle http call
+    await createSubscription(email);
     setLatestSubscriber(email);
     await report({ eventName: 'subscription-created' });
   };
