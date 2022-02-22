@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 
-import { AnalyticsProvider } from '../providers/analytics';
-import { AnalyticsService } from '../types';
+import { AnalyticsProvider } from '../../providers/analytics';
+import { AnalyticsService } from '../../types';
 
 const report = jest.fn();
 

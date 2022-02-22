@@ -2,7 +2,7 @@ import React, { FC, Suspense } from 'react';
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
 
-import { Language } from '../types';
+import { Language } from '../../types';
 
 i18next.init(
   {

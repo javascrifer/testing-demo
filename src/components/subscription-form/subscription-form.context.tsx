@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import { TestId } from '../../types';
-import { I18nTestProvider } from '../../testing/i18n-provider';
+import { I18nTestProvider } from '../../testing/providers';
 
 import { SubscriptionForm, SubscriptionFormProps } from './subscription-form';
 

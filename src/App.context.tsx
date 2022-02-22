@@ -1,14 +1,14 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import { I18nTestProvider } from './testing/i18n-provider';
 import {
+  I18nTestProvider,
   AnalyticsMockProvider,
   analyticsBeforeAndAfter,
-} from './testing/analytics-provider';
+} from './testing/providers';
 import App from './App';
 
-export { analyticsMockService } from './testing/analytics-provider';
+export { analyticsMockService } from './testing/providers';
 
 export const beforeAndAfter = analyticsBeforeAndAfter;
 
