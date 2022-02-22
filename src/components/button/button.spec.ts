@@ -1,7 +1,7 @@
 import { TestId } from '../../types';
+import { ButtonDriver } from '../../testing/drivers';
 
 import { renderButton } from './button.context';
-import { ButtonDriver } from './button.driver';
 
 describe('<Button/>', () => {
   const driver = new ButtonDriver(TestId.Button);

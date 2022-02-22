@@ -1,6 +1,6 @@
 {
   "landing-page": {
-    "cta": "Click me"
+    "greeting": "Welcome, {{name}}!"
   },
   "subscription-form": {
     "email": {

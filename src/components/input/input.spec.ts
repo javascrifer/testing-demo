@@ -1,7 +1,7 @@
 import { TestId } from '../../types';
+import { InputDriver } from '../../testing/drivers';
 
 import { renderInput } from './input.context';
-import { InputDriver } from './input.driver';
 
 describe('<Input/>', () => {
   const driver = new InputDriver(TestId.Input);

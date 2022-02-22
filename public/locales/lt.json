@@ -1,6 +1,6 @@
 {
   "landing-page": {
-    "cta": "Paspausk mane"
+    "greeting": "Sveiki, {{name}}!"
   },
   "subscription-form": {
     "email": {

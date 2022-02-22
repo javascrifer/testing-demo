@@ -1,9 +1,10 @@
+import { SubscriptionFormDriver } from '../../testing/drivers';
+
 import {
   renderSubscriptionForm,
   OptionsBuilder,
   getPausableOnSubmit,
 } from './subscription-form.context';
-import { SubscriptionFormDriver } from './subscription-form.driver';
 
 describe('<SubscriptionForm/>', () => {
   const formDriver = new SubscriptionFormDriver();
