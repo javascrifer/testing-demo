@@ -1,5 +1,14 @@
 {
   "landing-page": {
     "cta": "Click me"
+  },
+  "subscription-form": {
+    "email": {
+      "title": "Email",
+      "placeholder": "Your email goes here..."
+    },
+    "cta": {
+      "text": "Submit"
+    }
   }
 }

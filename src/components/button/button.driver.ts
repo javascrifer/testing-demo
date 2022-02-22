@@ -6,6 +6,10 @@ import { TestId } from '../../types';
 export class ButtonDriver {
   constructor(private readonly testId: TestId) {}
 
+  getElement() {
+    return screen.getByTestId(this.testId) as HTMLButtonElement;
+  }
+
   getText() {
     const { textContent } = this.getElement();
     return textContent;
@@ -24,9 +28,5 @@ export class ButtonDriver {
   click() {
     const button = this.getElement();
     return userEvent.click(button);
-  }
-
-  private getElement() {
-    return screen.getByTestId(this.testId) as HTMLButtonElement;
   }
 }

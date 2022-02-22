@@ -1,5 +1,14 @@
 {
   "landing-page": {
     "cta": "Paspausk mane"
+  },
+  "subscription-form": {
+    "email": {
+      "title": "El. paštas",
+      "placeholder": "Pateikite savo el. paštą"
+    },
+    "cta": {
+      "text": "Pateikti"
+    }
   }
 }
