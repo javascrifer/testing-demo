@@ -5,14 +5,14 @@ import { SubscriptionForm } from './components';
 
 function App() {
   const { t } = useLocalization();
-  const { createSubscription } = useSubscriptionService();
   const { report } = useAnalytics();
+  const { createSubscription } = useSubscriptionService();
   const [latestSubscriber, setLatestSubscriber] = useState<string>('');
 
   const handleSubscriptionFormSubmit = async (email: string) => {
     await createSubscription(email);
     setLatestSubscriber(email);
-    await report({ eventName: 'subscription-created' });
+    return report({ eventName: 'subscription-created' });
   };
 
   return (
