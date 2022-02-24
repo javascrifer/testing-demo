@@ -36,7 +36,7 @@ export class InputDriver {
   }
 
   type(text: string) {
-    const button = this.getElement();
-    return userEvent.type(button, text);
+    const input = this.getElement();
+    return userEvent.type(input, text);
   }
 }
